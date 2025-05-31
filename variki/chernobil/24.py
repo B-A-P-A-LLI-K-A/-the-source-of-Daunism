@@ -1,0 +1,2 @@
+import re
+print(max([len(i.group()) for i in re.finditer('([13579BDFHJLNPS]([02468ACEGIKMORT][13579BDFHJLNPS])+[02468ACEGIKMORT]?|[2468ACEGIKMORT]([13579BDFHJLNPS][02468ACEGIKMORT])+[13579BDFHJLNPS]?)', open('24').readline())]))
